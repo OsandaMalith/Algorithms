@@ -22,6 +22,7 @@ main () {
 	int input;
 	printf("\n\n[~] Linked List Purely written by Osanda Malith Jayathissa\n");
 	printf("I am not trying to re-invent the wheel, just for fun wrote this :)\n");
+	while(1) {
 	printf("\n\n1. Insert into the List\n2. Search the List\n3. Remove node \ 
 	\n4. Exit\n>> ");
 	scanf("%i", &input);
@@ -30,7 +31,7 @@ main () {
 		case 2:Search();break;
 		case 3:Remove();break;
 		case 4:return 0;
-	}
+	} }
 }
 
 struct node *makenode(int item) {
@@ -78,7 +79,6 @@ void Insert() {
 	printf("How many nodes? "); scanf("%i", &n);
 	for (i = 0; i < n; ++i) { printf("\nEnter your number: "); scanf("%d", &x); 
 		add(&list, x); display(list); }
-	main();
 }
 
 void Search() {
@@ -88,7 +88,6 @@ void Search() {
 	if(p = find(list, n)) printf("\nFound the value: %i", p->data);
 	//printf("\n\nFound the value: %i", ((p = find(list, n)) ? p->data : -1));
 	else printf("Value not Found");
-	main();
 }
 
 void Remove() {
