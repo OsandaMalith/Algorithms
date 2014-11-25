@@ -18,7 +18,7 @@ struct stack s;
 //     /  _ )   ,'   `-. `-. \   search trees, arbitrary trees, left and right only
 //    / ,' /  ,'        \ \ \ \  trees and
 //   / /  / ,'          (,_)(,_)  can manipulate based on the users input
-//  (,;  (,,)
+//  (,;  (,,)			  BSD License. Copyright (c) 2014
 
 clock_t tic;
 clock_t toc;
