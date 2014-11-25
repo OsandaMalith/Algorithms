@@ -1,3 +1,7 @@
+/*
+This file is a part of Osanda's binary tree implementation.
+Copyright (c) 2014
+*/
 struct treenode {
 	int data;
 	struct treenode *left, *right;
