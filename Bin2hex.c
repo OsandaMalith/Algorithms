@@ -16,8 +16,7 @@ short toHex(char *binary) {
 			case '1':MASK = 1; break;
 			case '0':MASK = 0; break;
 			default: puts("Not binary");
-		}	
-		hex |= MASK;
+		} hex |= MASK;
 	} return hex;
 }
 
