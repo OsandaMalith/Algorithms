@@ -22,7 +22,7 @@ main () {
 	int input;
 	printf("\n\n[~] Linked List Purely written by Osanda Malith Jayathissa\n");
 	printf("I am not trying to re-invent the wheel, just for fun wrote this :)\n");
-	while(1) {
+	for(;;) {
 	printf("\n\n1. Insert into the List\n2. Search the List\n3. Remove node \ 
 	\n4. Display\n5. Exit\n>> ");
 	scanf("%i", &input);
