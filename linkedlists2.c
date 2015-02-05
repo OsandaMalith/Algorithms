@@ -87,13 +87,11 @@ void Search() {
 	int n;
 	struct node *p;
 	printf("Enter your value: "); scanf("%i", &n);
-	if(p = find(list, n)) printf("\nFound the value: %i", p->data);
-	//printf("\n\nFound the value: %i", ((p = find(list, n)) ? p->data : -1));
-	else printf("Value not Found");
+	(p = find(list, n)) ? printf("\nFound the value: %i", p->data) : printf("\nValue not Found\n");
 }
 
 void Remove() {
 	int n; printf("Enter your value to be removed: "); scanf("%i", &n);
-	if(removenode(&list, n)) printf("\nItem is removed\n"); else printf("Value not found\n");
+	removenode(&list, n) ? printf("\nItem is removed\n") : printf("\nValue not found\n");
 	display(list);
 }
