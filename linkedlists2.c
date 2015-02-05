@@ -71,7 +71,7 @@ int removenode(struct node** list, int item) {
 	struct node *temp = find(*list, item);
 	if(!temp) return 0;
 	struct node *ptr = previous(*list, temp);
-	(ptr) ? (ptr->next=temp->next) : (*list=temp->next);
+	ptr ? ptr->next=(temp->next) : (*list=temp->next);
 	free(temp);
 	return 1;
 }
