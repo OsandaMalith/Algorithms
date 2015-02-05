@@ -80,18 +80,18 @@ void Insert() {
 	int i, n, x; 
 	printf("How many nodes? "); scanf("%i", &n);
 	for (i = 0; i < n; ++i) { printf("\nEnter your number: "); scanf("%d", &x); 
-		add(&list, x); display(list); }
+		add(&list, x) ? display(list) : puts("Error"); }
 }
 
 void Search() {
 	int n;
 	struct node *p;
 	printf("Enter your value: "); scanf("%i", &n);
-	(p = find(list, n)) ? printf("\nFound the value: %i", p->data) : printf("\nValue not Found\n");
+	(p = find(list, n)) ? printf("\nFound the value: %i", p->data) : puts("\nValue not Found");
 }
 
 void Remove() {
 	int n; printf("Enter your value to be removed: "); scanf("%i", &n);
-	removenode(&list, n) ? printf("\nItem is removed\n") : printf("\nValue not found\n");
+	removenode(&list, n) ? printf("\nItem is removed\n") : puts("\nValue not found");
 	display(list);
 }
