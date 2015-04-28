@@ -1,6 +1,8 @@
 package ceasar;
 import java.util.*;
-/* Caesar Cipher programmed by Osanda Malith*/
+/* Caesar Cipher programmed by Osanda Malith Jayathissa
+http://osandamalith.wordpress.com
+*/
 public class ceasar {
 	private static String LETTERS = new String("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 	private static Scanner s = new Scanner(System.in);
