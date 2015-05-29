@@ -99,13 +99,12 @@ void Encrypt(){
 void (*funcs[])() = { Encrypt, Decrypt, NULL };
 
 int main(int argc, char *argv[]) {
-  size_t i;
-  FILE *fpIn;
-  
   banner();
+  
   puts("\t---Welcome to Osanda's Crypto Program---\n");
    
   while(prompt());
+  
   return 0;
 } 
 
